@@ -2,12 +2,17 @@
 <html lang="th">
 <head>
   <meta charset="UTF-8">
-  <title>Flickxzi Header</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Flickxzi</title>
   <style>
     body {
       margin: 0;
       padding: 0;
       background: #000;
+      background-image: url('your-background-image.jpg');
+      background-size: cover;
+      background-position: center;
+      background-attachment: fixed;
       font-family: sans-serif;
     }
 
@@ -19,7 +24,10 @@
       align-items: center;
       padding: 0 20px;
       background-color: rgba(0, 0, 0, 0.4);
-      box-sizing: border-box;
+      position: fixed;
+      top: 0;
+      left: 0;
+      z-index: 1000;
     }
 
     .logo img {
@@ -85,22 +93,18 @@
 <body>
 
   <div class="header">
+    <!-- โลโก้ใหม่ -->
     <div class="logo">
-      <!-- โลโก้ของคุณ -->
       <img src="https://i.postimg.cc/2SSHL0Px/Untitled-design.png" alt="Flickxzi Logo">
     </div>
 
     <div class="buttons">
-      <!-- ลิงก์ไลน์ของคุณ (สมัครสมาชิก) -->
-      <a href="https://line.me/R/ti/p/~@313wsohw?utm_medium=social&utm_source=heylink.me"
-         class="btn green" target="_blank">
+      <a href="https://line.me/R/ti/p/~@313wsohw?utm_medium=social&utm_source=heylink.me" class="btn green" target="_blank">
         <img src="https://cdn-icons-png.flaticon.com/512/2111/2111728.png" alt="LINE">
         สมัครสมาชิก
       </a>
 
-      <!-- ลิงก์ไลน์ของคุณ (เข้าสู่ระบบ) -->
-      <a href="https://line.me/R/ti/p/~@313wsohw?utm_medium=social&utm_source=heylink.me"
-         class="btn orange" target="_blank">
+      <a href="https://line.me/R/ti/p/~@313wsohw?utm_medium=social&utm_source=heylink.me" class="btn orange" target="_blank">
         <img src="https://cdn-icons-png.flaticon.com/512/1828/1828490.png" alt="Login">
         เข้าสู่ระบบ
       </a>
